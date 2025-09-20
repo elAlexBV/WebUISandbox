@@ -1,20 +1,6 @@
-html
+:root
 {
-	font-size: 16px;
 }
-
-table, th, tr, td
-{
-	border-collapse: collapse;
-	border: 1px solid black;
-}
-
-td
-{
-	padding: 0.5rem;
-}
-
-/* Web UI sandbox */
 
 /* HoverButton */
 
@@ -111,4 +97,56 @@ td
 .HoverButton4:hover
 {
 	background: lightyellow;
+}
+
+/* HoverButton5 */
+
+.HoverButton5
+{
+	display: inline-block;
+	width: 96px;
+	height: 48px;
+	text-align: center;
+	background: transparent;
+}
+
+.HoverButton5:hover
+{
+	background: rgba(0, 128, 0, 0.2);
+}
+
+.HoverButton5 img
+{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	transition: 0.5s ease;
+	transform: translateY(0px);
+}
+
+.HoverButton5 .HoverButton5Text
+{
+	text-align: center;
+	position: relative;
+	left: 5%;
+	top: 0px;
+	width: 90%;
+	font-size: 0.7rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	transition: 0.5s ease;
+	transform: translateY(-14px);
+	opacity: 0;
+}
+
+.HoverButton5:hover img
+{
+	transform: translateY(-12px) scale(0.5);
+}
+
+.HoverButton5:hover .HoverButton5Text
+{
+	opacity: 1;
+	transform: translateY(-24px);
 }
